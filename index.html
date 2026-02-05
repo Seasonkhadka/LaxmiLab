@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pharmaceutical Efficacy Analysis Laboratory</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="brand">Enter site name</div>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Menu</span>
+        ☰
+      </button>
+
+      <ul id="primary-nav" class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="professor.html">Professor</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publication.html">Publication</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+   
+  </header>
+
+  <main class="container main-content">
+ <div class="hero" role="banner" aria-label="Pharmaceutical Efficacy Analysis Laboratory">
+      <video class="hero-bg" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1605902711622-cfb43c44367e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=60">
+        <source src="assets/hero.mp4" type="video/mp4">
+        <!-- Fallback content or image (poster) will show if video not supported. -->
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-inner container">
+        <h1 class="hero-title">Pharmaceutical Efficacy<br/>Analysis Laboratory</h1>
+      </div>
+    </div>
+    <section class="intro">
+      <p>
+        The <strong>Pharmaceutical Efficacy Analysis</strong> Laboratory explores the biological mechanisms underlying metabolic diseases, with a focus on insulin resistance, obesity, type 2 diabetes, and related complications such as neurodegeneration.
+      </p>
+
+      <p>
+       Our research examines how environmental pollutants—including particulate matter (PM₁₀), micro- and nanoplastics (MNPs), and persistent organic pollutants (POPs)—enter the body and disrupt metabolic homeostasis. We investigate their effects on barrier integrity, inflammatory signaling, transcriptional regulation, and insulin signaling pathways at the cellular and systemic levels.
+In parallel, we develop and evaluate evidence-based herbal and natural interventions aimed at restoring metabolic balance and protecting against pollutant-induced dysfunction. By integrating in vitro and in vivo models, our laboratory bridges environmental exposure science with therapeutic innovation to advance strategies for metabolic health.
+      </p>
+    </section>
+
+    <section class="video-section">
+      <h2>Upload or Drop a Video (Preview below) 🎥</h2>
+
+      <div id="drop-area" class="drop-area">
+        <p>Drag & drop a video here or <label for="video-input" class="browse">browse</label></p>
+        <input id="video-input" type="file" accept="video/*" />
+      </div>
+
+      <div class="video-preview">
+        <video id="preview-video" controls muted playsinline poster="">
+          Your browser does not support HTML5 video.
+        </video>
+        <div id="video-controls" class="video-controls">
+          <button id="play-btn">Play</button>
+          <button id="pause-btn">Pause</button>
+          <button id="snap-btn">Save Poster</button>
+        </div>
+        <p id="file-info" class="file-info"></p>
+      </div>
+    </section>
+
+    <section class="contact-compact">
+      <div class="container">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:lab@example.edu">lab@example.edu</a> &nbsp;|&nbsp; Phone: +1 (555) 555‑5555</p>
+        <p>Address: Department, University, City, Country</p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Pharmaceutical Efficacy Analysis Laboratory</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

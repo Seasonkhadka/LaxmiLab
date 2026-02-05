@@ -1,0 +1,258 @@
+/* Professor page – info container + publication charts container */
+
+.main-content .container {
+  max-width: 1100px;
+}
+
+/* ----- Professor information container ----- */
+.professor-info-container {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  background: #fff;
+  padding: 28px 32px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(11, 59, 74, 0.08);
+  border: 1px solid rgba(11, 158, 168, 0.12);
+  margin-bottom: 32px;
+}
+
+.professor-photo-wrap {
+  flex-shrink: 0;
+  width: 280px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  overflow: hidden;
+  background: #e8eef0;
+}
+
+.professor-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
+}
+
+.professor-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.professor-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #0b3b4a;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+.professor-meta {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.professor-meta li {
+  font-size: 15px;
+  color: #1b2b2f;
+  margin-bottom: 10px;
+  padding-left: 0;
+  position: relative;
+}
+
+.professor-meta li::before {
+  content: '·';
+  font-weight: bold;
+  color: #222;
+  margin-right: 6px;
+}
+
+.professor-meta-label {
+  font-weight: 700;
+  color: #222;
+}
+
+.professor-meta a {
+  color: #0b9ea8;
+  text-decoration: none;
+}
+
+.professor-meta a:hover {
+  text-decoration: underline;
+}
+
+/* ----- Publication information container ----- */
+.publication-info-container {
+  background: #fff;
+  padding: 28px 32px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(11, 59, 74, 0.08);
+  border: 1px solid rgba(11, 158, 168, 0.12);
+}
+
+.publication-info-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0b3b4a;
+  margin: 0 0 24px 0;
+}
+
+.publication-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.chart-box {
+  min-width: 0;
+}
+
+.chart-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1b2b2f;
+  margin: 0 0 16px 0;
+  text-align: center;
+}
+
+/* ----- Bar chart (Publications by Top Specialties) ----- */
+.bar-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bar-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 28px;
+}
+
+.bar-label {
+  flex: 0 0 140px;
+  font-size: 13px;
+  color: #4a6572;
+}
+
+.bar-track {
+  flex: 1;
+  height: 20px;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 19px,
+    rgba(11, 158, 168, 0.08) 19px,
+    rgba(11, 158, 168, 0.08) 20px
+  );
+  border-radius: 4px;
+  overflow: hidden;
+  min-width: 80px;
+}
+
+.bar-fill {
+  height: 100%;
+  background: #0b9ea8;
+  border-radius: 4px;
+  min-width: 4px;
+  transition: width 0.4s ease;
+}
+
+/* ----- Pie chart (Types of Publication) ----- */
+.pie-chart-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.pie-chart {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: #0b9ea8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.pie-center-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  z-index: 1;
+}
+
+.pie-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.pie-legend-item {
+  font-size: 14px;
+  color: #1b2b2f;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pie-legend-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #0b9ea8;
+  flex-shrink: 0;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 900px) {
+  .professor-info-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .professor-photo-wrap {
+    width: 260px;
+  }
+
+  .professor-meta li::before {
+    margin-right: 4px;
+  }
+
+  .publication-charts {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .professor-info-container,
+  .publication-info-container {
+    padding: 20px 18px;
+  }
+
+  .professor-name {
+    font-size: 22px;
+  }
+
+  .bar-row {
+    flex-wrap: wrap;
+  }
+
+  .bar-label {
+    flex: 0 0 100%;
+  }
+
+  .bar-track {
+    width: 100%;
+  }
+}

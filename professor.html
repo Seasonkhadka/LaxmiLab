@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Professor - Pharmaceutical Efficacy Analysis Laboratory</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/professor.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="brand">Enter site name</div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
+      <ul id="primary-nav" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="professor.html" class="active">Professor</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publication.html">Publication</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <!-- Professor information container: photo + details -->
+      <section class="professor-info-container" aria-label="Professor information">
+        <div class="professor-photo-wrap">
+          <img src="media/professor-photo.jpg" alt="Dong Young Rhyu, PhD" class="professor-photo" width="280" height="320" onerror="this.src='https://picsum.photos/seed/rhyu/280/320'; this.onerror=null;">
+        </div>
+        <div class="professor-details">
+          <h1 class="professor-name">Dong Young Rhyu, PhD</h1>
+          <ul class="professor-meta">
+            <li><span class="professor-meta-label">Major</span> : Pharmacy</li>
+            <li><span class="professor-meta-label">Lab.</span> : 약효분석 실험실</li>
+            <li><span class="professor-meta-label">Office</span> : C30-4125</li>
+            <li><span class="professor-meta-label">Office Phone</span> : 061-450-2664</li>
+            <li><span class="professor-meta-label">Email</span> : <a href="mailto:rhyudy@mnu.ac.kr">rhyudy@mnu.ac.kr</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Publication information container: bar chart + pie chart -->
+      <section class="publication-info-container" aria-label="Publication information">
+        <h2 class="publication-info-heading">Publication Information</h2>
+        <div class="publication-charts">
+          <div class="chart-box">
+            <h3 class="chart-title">Publications based on Top Specialties</h3>
+            <div class="bar-chart" role="img" aria-label="Horizontal bar chart of publications by specialty">
+              <div class="bar-row"><span class="bar-label">Glucose</span>     <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div></div>
+              <div class="bar-row"><span class="bar-label">Insulin</span>     <div class="bar-track"><div class="bar-fill" style="width:92%"></div></div></div>
+              <div class="bar-row"><span class="bar-label">Metabolism</span>  <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div></div>
+              <div class="bar-row"><span class="bar-label">Zebrafish</span>   <div class="bar-track"><div class="bar-fill" style="width:78%"></div></div></div>
+              <div class="bar-row"><span class="bar-label">Diabetes</span>    <div class="bar-track"><div class="bar-fill" style="width:72%"></div></div></div>
+              <div class="bar-row"><span class="bar-label">Insulin resistance</span> <div class="bar-track"><div class="bar-fill" style="width:65%"></div></div></div>
+              <div class="bar-row"><span class="bar-label">Lipid</span>       <div class="bar-track"><div class="bar-fill" style="width:58%"></div></div></div>
+              <div class="bar-row"><span class="bar-label">Obesity</span>     <div class="bar-track"><div class="bar-fill" style="width:50%"></div></div></div>
+              <div class="bar-row"><span class="bar-label">Beta cell</span>   <div class="bar-track"><div class="bar-fill" style="width:42%"></div></div></div>
+              <div class="bar-row"><span class="bar-label">Cell damage</span> <div class="bar-track"><div class="bar-fill" style="width:35%"></div></div></div>
+            </div>
+          </div>
+          <div class="chart-box">
+            <h3 class="chart-title">Types of Publication</h3>
+            <div class="pie-chart-wrap" role="img" aria-label="Pie chart: 100% Journal Papers">
+              <div class="pie-chart" title="100% Journal Papers">
+                <span class="pie-center-text">100%</span>
+              </div>
+              <div class="pie-legend">
+                <span class="pie-legend-item"><i class="pie-legend-dot" aria-hidden="true"></i> Journal Papers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="contact-compact">
+      <div class="container">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:rhyudy@mnu.ac.kr">rhyudy@mnu.ac.kr</a> &nbsp;|&nbsp; Phone: 061-450-2664</p>
+        <p>Office: C30-4125, Pharmacy Building</p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Pharmaceutical Efficacy Analysis Laboratory</p>
+      </div>
+    </footer> 
+  </main>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
