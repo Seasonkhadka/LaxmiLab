@@ -33,48 +33,51 @@
    
   </header>
 
-  <main class="container main-content">
- <div class="hero" role="banner" aria-label="Pharmaceutical Efficacy Analysis Laboratory">
+  <main class="main-content">
+    <!-- Hero: full-viewport background video with lab title on top -->
+    <section class="hero" role="banner" aria-label="Pharmaceutical Efficacy Analysis Laboratory">
       <video class="hero-bg" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1605902711622-cfb43c44367e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=60">
         <source src="assets/hero.mp4" type="video/mp4">
-        <!-- Fallback content or image (poster) will show if video not supported. -->
       </video>
       <div class="hero-overlay"></div>
       <div class="hero-inner container">
         <h1 class="hero-title">Pharmaceutical Efficacy<br/>Analysis Laboratory</h1>
       </div>
-    </div>
-    <section class="intro">
-      <p>
-        The <strong>Pharmaceutical Efficacy Analysis</strong> Laboratory explores the biological mechanisms underlying metabolic diseases, with a focus on insulin resistance, obesity, type 2 diabetes, and related complications such as neurodegeneration.
-      </p>
-
-      <p>
-       Our research examines how environmental pollutants—including particulate matter (PM₁₀), micro- and nanoplastics (MNPs), and persistent organic pollutants (POPs)—enter the body and disrupt metabolic homeostasis. We investigate their effects on barrier integrity, inflammatory signaling, transcriptional regulation, and insulin signaling pathways at the cellular and systemic levels.
-In parallel, we develop and evaluate evidence-based herbal and natural interventions aimed at restoring metabolic balance and protecting against pollutant-induced dysfunction. By integrating in vitro and in vivo models, our laboratory bridges environmental exposure science with therapeutic innovation to advance strategies for metabolic health.
-      </p>
     </section>
 
-    <section class="video-section">
-      <h2>Upload or Drop a Video (Preview below) 🎥</h2>
+    <div class="container">
+      <section class="intro">
+        <p>
+          The <strong>Pharmaceutical Efficacy Analysis</strong> Laboratory explores the biological mechanisms underlying metabolic diseases, with a focus on insulin resistance, obesity, type 2 diabetes, and related complications such as neurodegeneration.
+        </p>
+        <p>
+          Our research examines how environmental pollutants—including particulate matter (PM₁₀), micro- and nanoplastics (MNPs), and persistent organic pollutants (POPs)—enter the body and disrupt metabolic homeostasis. We investigate their effects on barrier integrity, inflammatory signaling, transcriptional regulation, and insulin signaling pathways at the cellular and systemic levels.
+          In parallel, we develop and evaluate evidence-based herbal and natural interventions aimed at restoring metabolic balance and protecting against pollutant-induced dysfunction. By integrating in vitro and in vivo models, our laboratory bridges environmental exposure science with therapeutic innovation to advance strategies for metabolic health.
+        </p>
+      </section>
 
-      <div id="drop-area" class="drop-area">
-        <p>Drag & drop a video here or <label for="video-input" class="browse">browse</label></p>
-        <input id="video-input" type="file" accept="video/*" />
-      </div>
-
-      <div class="video-preview">
-        <video id="preview-video" controls muted playsinline poster="">
-          Your browser does not support HTML5 video.
-        </video>
-        <div id="video-controls" class="video-controls">
-          <button id="play-btn">Play</button>
-          <button id="pause-btn">Pause</button>
-          <button id="snap-btn">Save Poster</button>
+      <section class="overview" aria-label="Overview of lab work">
+        <h2 class="overview-title">Overview of Our Work</h2>
+        <div class="overview-grid">
+          <div class="overview-card">
+            <h3>Metabolic disease research</h3>
+            <p>We study insulin resistance, obesity, type 2 diabetes, and related complications including neurodegeneration and hepatic steatosis, using cellular and animal models.</p>
+          </div>
+          <div class="overview-card">
+            <h3>Environmental exposures</h3>
+            <p>We assess how particulate matter (PM₁₀), micro- and nanoplastics (MNPs), and persistent organic pollutants (POPs) affect metabolic homeostasis, barrier integrity, and insulin signaling.</p>
+          </div>
+          <div class="overview-card">
+            <h3>Natural interventions</h3>
+            <p>We develop and evaluate herbal and marine-derived compounds (e.g. <em>Gracilaria chorda</em>, <em>Caulerpa</em> species) for improving glucose and lipid metabolism and insulin sensitivity.</p>
+          </div>
+          <div class="overview-card">
+            <h3>Models & methods</h3>
+            <p>We use 3T3-L1 adipocytes, L6 myotubes, pancreatic β-cells, zebrafish larvae, and C57BL/6J mice to bridge in vitro and in vivo findings toward therapeutic strategies.</p>
+          </div>
         </div>
-        <p id="file-info" class="file-info"></p>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <section class="contact-compact">
       <div class="container">
